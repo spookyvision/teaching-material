@@ -1,6 +1,7 @@
 fn main() {
-    // NOTE overflow, 32 bit, etc 
+    // NOTE overflow, 32 bit, etc
     // TODO granularity?
+    // slides: basic types
     let an_int = 123;
     let a_big_int = 1_000_000_000_000;
     let a_float = 3.14;
