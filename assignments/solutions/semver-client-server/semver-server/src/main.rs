@@ -76,5 +76,5 @@ fn read_command(stream: &mut TcpStream) -> Result<Command, ApiError> {
     buffered_stream
         .read_line(&mut read_buffer)
         .map_err(|_| ApiError::InvalidCommand)?;
-    Command::from_str(&read_buffer)
+    read_buffer.parse()
 }
